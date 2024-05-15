@@ -1,0 +1,16 @@
+.sidebar {
+  background: var(--media-pool-background-color);
+  width:calc(220px);
+  padding:30px;
+}
+.btn, .active {color: var(--font-color);display:flex;align-items: center;text-decoration: none;padding:15px 20px;background:rgba(0, 0, 0, 0, 0);border-radius:20px;margin:15px 0px;}
+.btn span, .active span{margin-right:10px;}
+.active{background:rgba(66, 65, 65, 0.151);}
+.divider {
+  height: 1px;
+  background-color: #D9D9D9;
+}
+.bottom_btn {
+  position: absolute;
+  bottom: 10px;
+}

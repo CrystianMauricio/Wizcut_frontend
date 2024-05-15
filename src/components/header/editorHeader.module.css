@@ -1,0 +1,66 @@
+.container {
+  padding: 20px  ;
+  background: #FFF;
+  overflow: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.progress1 {
+ place-self: center;
+}
+.search {
+ color: #4F4F4F;
+ max-width: 500px; 
+ display: flex;
+ justify-content: space-between;
+}
+.search_input {
+  width: 100% ;
+  border: none;
+  color: #4F4F4F;
+  height: 16.71px;
+  padding: 5px;
+  background-color: #F7F7F8;
+  font-size: 16px;
+}
+.search_input:focus-visible {
+  outline: none !important;
+}
+.headerGroup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.new_btn {
+  background-color: #5A5AFF;
+  border-radius: 45px;
+  width: 160px;
+  color: #F7F7F8;
+  font-size: 16px;
+  height: 45px;
+}
+.star {
+  margin-right:10px;
+}
+.notification {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.editor_btn_group {
+  position: absolute;
+  right: 120px;
+}
+.skip_btn {
+  font-size: 16px;
+  width: 106px;
+  margin-right: 10px;
+  border-radius: 70px;
+  background-color: #FFF;
+}
+.generate_btn {
+  width: 160px;
+  background-color: #5A5AFF;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 70px;
+}

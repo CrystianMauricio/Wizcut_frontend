@@ -1,0 +1,136 @@
+.container {
+  padding-left: 80px;
+  padding-right: 80px;
+  display: grid;
+
+  grid-template-areas:
+    "detail mediaPlayer"
+    "mediaPool mediaPool "
+    "buttonGroup buttonGroup";
+
+  grid-template-columns: 30% minmax(0, 1fr) ;
+  grid-template-rows: minmax(0, 1fr) 200px 130px;
+
+  height: 80vh;
+}
+.mediaPlayerWrapper {
+  position: relative;
+  display: flex;
+  place-self: end;
+}
+.generate_btn_group {
+  grid-area: buttonGroup;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.regen_btn {
+  color: #5A5AFF;
+  font-size: 16px;
+  width: 208px;
+  border-radius: 45px;
+  border: 1px solid #5A5AFF;
+}
+.star {
+  margin-right:10px;
+}
+.skip_btn {
+  font-size: 16px;
+  width: 106px;
+  margin-right: 10px;
+}
+.generate_btn {
+  width: 160px;
+  background-color: #5A5AFF;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 70px;
+}
+
+
+.detail {
+  grid-area: detail;
+  margin: 0 0px 15px 0;
+  padding: 15px;
+  background-color: #fff;
+}
+.detail_title {
+  height: 40px;
+  background-color: #F7F7F8;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.detail_name {
+  font-weight: 700;
+}
+.detail_content {
+  margin-top: 20px;
+}
+.star2 {
+  margin: 30px 0 0 30px;
+}
+
+.control {
+  position: absolute;
+  bottom: 10px;
+  height: 120px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.trackbar_group {
+  height: 30px;
+  width: 100%;
+}
+.trackbar {
+  height: 5px;
+  margin-right: 7px;
+}
+.btn_group {
+  margin-top: 5px;
+  width: 90%;
+  color: rgb(27, 24, 24);
+  display: flex;
+  justify-content: space-between;
+}
+.left_group {
+  display: flex;
+  align-items: center;
+}
+.btn {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.time {
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+
+input[type='range'] {
+  overflow: hidden;
+  width: 92%;
+  -webkit-appearance: none;
+  background-color: #A2A0A0;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  width: 0;
+  -webkit-appearance: none;
+  cursor: pointer;
+  box-shadow: -1920px 0 0 1920px #5A5AFF;
+}
+
+.fullscreen {
+  cursor: pointer;
+}
+@media (max-width: 1100px) {
+}
